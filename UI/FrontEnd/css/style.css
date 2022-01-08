@@ -4582,22 +4582,22 @@ footer {
   height: 23px;
 }
 .icon-left a:hover {
-  background-color: red;
+  background-color: #00b093;
 }
 .mdr {
-  background: #00b093;
+  background: #295283;
   color: white;
 }
 .doctors {
-  background: #179882;
+  background: #295283;
   color: white;
 }
 .appointment {
-  background: #00b093;
+  background: #295283;
   color: white;
 }
 .blood {
-  background: #179882;
+  background: #295283;
   color: white;
 }
 .panel-title i {
