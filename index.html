@@ -963,7 +963,8 @@
 
                                     <label class="col-md-6 col-xs-12 margin-bottom-20">
                                         <span class="fa fa-medkit"></span>
-                                        <select
+                                        <select id="dipartment_select"
+                                        onchange="dipartmentChange()"  
                                             class="form-control ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
                                             ng-model="bv.department" ng-change="getDoctorsByDepartment(bv.department)"
                                             required="" aria-invalid="true">
@@ -1054,7 +1055,7 @@
 
                                     <label class="col-md-6 col-xs-12 margin-bottom-20">
                                         <span class="fa fa-user-md"></span>
-                                        <select
+                                        <select id="doctor_select"
                                             class="form-control ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
                                             ng-model="bv.department" ng-change="getDoctorsByDepartment(bv.department)"
                                             required="" aria-invalid="true">
@@ -1602,6 +1603,19 @@
         </div>
     </section>
 
+    <div class="form-container">
+        <form class="form">
+          <input id="search" type="text" class="input" placeholder="search..." />
+          <button id="clear" class="clear-results">clear</button>
+        </form>
+      
+      </div>
+      <div class="results-container>
+             <ul class=" results-list" id="list">
+      
+        </ul>
+      </div>
+
 
     <a href="#" class="scrollup"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
 
@@ -1617,6 +1631,8 @@
     <script type="text/javascript" src="./UI/FrontEnd/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./UI/FrontEnd/js/css3-animate-it.js"></script>
     <script type="text/javascript" src="./UI/FrontEnd/js/bootstrap-dropdownhover.min.js"></script>
+    <script src="./UI/FrontEnd/js/form.js"></script>
+
 
 
 </body>
