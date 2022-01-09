@@ -590,156 +590,31 @@
                     <div class="col-md-12 better-form">
                         <p style="padding: 15px 0;color: #111;font-weight: 600;">Choose a department or type doctors
                             name.</p>
-                        <form name="search" class="ng-pristine ng-valid">
-                            <div class="col-md-5 col-xs-12 margin-bottom-20">
-                                <span class="fa fa-hospital-o"></span>
-                                <select class="form-control ng-pristine ng-valid ng-empty ng-touched" id="other_doctor_select"
-                                    ng-model="bv.departmentSearch" ng-change="searchReset()" aria-invalid="false">
-                                    <option data-ng-value="selected" data-ng-selected="selected" aria-checked="false"
-                                        value="undefined:undefined" selected="selected">Select A Department</option>
-                                    <option ng-value="91" value="number:91" aria-checked="true">Anaesthesia</option>
-                                    <option ng-value="49" value="number:49" aria-checked="true">Blood Bank</option>
-                                    <option ng-value="90" value="number:90" aria-checked="true">Breast, Colorectal &amp;
-                                        Laparoscopic Surgery</option>
-                                    <option ng-value="31" value="number:31" aria-checked="true">Cardiac surgery</option>
-                                    <option ng-value="12" value="number:12" aria-checked="true">Cardiology</option>
-                                    <option ng-value="40" value="number:40" aria-checked="true">Clinical Hematology
-                                    </option>
-                                    <option ng-value="43" value="number:43" aria-checked="true">Colorectal Surgery
-                                    </option>
-                                    <option ng-value="52" value="number:52" aria-checked="true">Corporate Affairs
-                                        Department</option>
-                                    <option ng-value="47" value="number:47" aria-checked="true">Dental and Maxillofacial
-                                        Surgery</option>
-                                    <option ng-value="29" value="number:29" aria-checked="true">Dermatology</option>
-                                    <option ng-value="30" value="number:30" aria-checked="true">Diabetes &amp;
-                                        Endocrinology</option>
-                                    <option ng-value="69" value="number:69" aria-checked="true">EMERGENCY</option>
-                                    <option ng-value="32" value="number:32" aria-checked="true">ENT, Head &amp; Neck
-                                        Surgery</option>
-                                    <option ng-value="18" value="number:18" aria-checked="true">Gastroenterology &amp;
-                                        Hepatology</option>
-                                    <option ng-value="10" value="number:10" aria-checked="true">General &amp;
-                                        Laparoscopic Surgery</option>
-                                    <option ng-value="76" value="number:76" aria-checked="true">Health Check Up</option>
-                                    <option ng-value="89" value="number:89" aria-checked="true">Hepatobiliary &amp;
-                                        Pancreatic Surgery</option>
-                                    <option ng-value="41" value="number:41" aria-checked="true">ICU</option>
-                                    <option ng-value="38" value="number:38" aria-checked="true">Internal Medicine
-                                    </option>
-                                    <option ng-value="45" value="number:45" aria-checked="true">Laboratory Medicine
-                                    </option>
-                                    <option ng-value="28" value="number:28" aria-checked="true">MRD SERVICES</option>
-                                    <option ng-value="20" value="number:20" aria-checked="true">Nephrology</option>
-                                    <option ng-value="34" value="number:34" aria-checked="true">Neurology</option>
-                                    <option ng-value="33" value="number:33" aria-checked="true">Neurosurgery</option>
-                                    <option ng-value="44" value="number:44" aria-checked="true">NICU</option>
-                                    <option ng-value="57" value="number:57" aria-checked="true">Nutrition &amp; Dietetic
-                                        Department</option>
-                                    <option ng-value="21" value="number:21" aria-checked="true">Obstetrics &amp;
-                                        Gynecology</option>
-                                    <option ng-value="15" value="number:15" aria-checked="true">Oncology</option>
-                                    <option ng-value="36" value="number:36" aria-checked="true">Orthopedics, Arthoscopy
-                                        &amp; Joint Replacement</option>
-                                    <option ng-value="17" value="number:17" aria-checked="true">Pediatric &amp;
-                                        Neonatology</option>
-                                    <option ng-value="70" value="number:70" aria-checked="true">Pediatric Surgery
-                                    </option>
-                                    <option ng-value="13" value="number:13" aria-checked="true">Plastic &amp; Aesthetic
-                                        Surgery</option>
-                                    <option ng-value="46" value="number:46" aria-checked="true">Psychiatry</option>
-                                    <option ng-value="42" value="number:42" aria-checked="true">Radiology &amp; Imaging
-                                    </option>
-                                    <option ng-value="39" value="number:39" aria-checked="true">Respiratory Medicine
-                                    </option>
-                                    <option ng-value="82" value="number:82" aria-checked="true">Rheumatology</option>
-                                    <option ng-value="85" value="number:85" aria-checked="true">Surgical Oncology
-                                    </option>
-                                    <option ng-value="37" value="number:37" aria-checked="true">Thoracic Surgery
-                                    </option>
-                                    <option ng-value="16" value="number:16" aria-checked="true">Urology</option>
-                                    <option ng-value="56" value="number:56" aria-checked="true">Vaccination Center
-                                    </option>
-                                    <option ng-value="35" value="number:35" aria-checked="true">Vascular Surgery
-                                    </option>
-                                </select>
-                            </div>
-                            <div class="col-md-5 col-xs-12 margin-bottom-20">
-                                <span class="fa fa-user-md"></span>
-                                <select class="form-control ng-pristine ng-valid ng-empty ng-touched" id="another_doctor_select"
-                                    ng-model="bv.departmentSearch" ng-change="searchReset()" aria-invalid="false">
-                                    <option data-ng-value="selected" data-ng-selected="selected" aria-checked="false"
-                                        value="undefined:undefined" selected="selected">Select A Department</option>
-                                    <option ng-value="91" value="number:91" aria-checked="true">Anaesthesia</option>
-                                    <option ng-value="49" value="number:49" aria-checked="true">Blood Bank</option>
-                                    <option ng-value="90" value="number:90" aria-checked="true">Breast, Colorectal &amp;
-                                        Laparoscopic Surgery</option>
-                                    <option ng-value="31" value="number:31" aria-checked="true">Cardiac surgery</option>
-                                    <option ng-value="12" value="number:12" aria-checked="true">Cardiology</option>
-                                    <option ng-value="40" value="number:40" aria-checked="true">Clinical Hematology
-                                    </option>
-                                    <option ng-value="43" value="number:43" aria-checked="true">Colorectal Surgery
-                                    </option>
-                                    <option ng-value="52" value="number:52" aria-checked="true">Corporate Affairs
-                                        Department</option>
-                                    <option ng-value="47" value="number:47" aria-checked="true">Dental and Maxillofacial
-                                        Surgery</option>
-                                    <option ng-value="29" value="number:29" aria-checked="true">Dermatology</option>
-                                    <option ng-value="30" value="number:30" aria-checked="true">Diabetes &amp;
-                                        Endocrinology</option>
-                                    <option ng-value="69" value="number:69" aria-checked="true">EMERGENCY</option>
-                                    <option ng-value="32" value="number:32" aria-checked="true">ENT, Head &amp; Neck
-                                        Surgery</option>
-                                    <option ng-value="18" value="number:18" aria-checked="true">Gastroenterology &amp;
-                                        Hepatology</option>
-                                    <option ng-value="10" value="number:10" aria-checked="true">General &amp;
-                                        Laparoscopic Surgery</option>
-                                    <option ng-value="76" value="number:76" aria-checked="true">Health Check Up</option>
-                                    <option ng-value="89" value="number:89" aria-checked="true">Hepatobiliary &amp;
-                                        Pancreatic Surgery</option>
-                                    <option ng-value="41" value="number:41" aria-checked="true">ICU</option>
-                                    <option ng-value="38" value="number:38" aria-checked="true">Internal Medicine
-                                    </option>
-                                    <option ng-value="45" value="number:45" aria-checked="true">Laboratory Medicine
-                                    </option>
-                                    <option ng-value="28" value="number:28" aria-checked="true">MRD SERVICES</option>
-                                    <option ng-value="20" value="number:20" aria-checked="true">Nephrology</option>
-                                    <option ng-value="34" value="number:34" aria-checked="true">Neurology</option>
-                                    <option ng-value="33" value="number:33" aria-checked="true">Neurosurgery</option>
-                                    <option ng-value="44" value="number:44" aria-checked="true">NICU</option>
-                                    <option ng-value="57" value="number:57" aria-checked="true">Nutrition &amp; Dietetic
-                                        Department</option>
-                                    <option ng-value="21" value="number:21" aria-checked="true">Obstetrics &amp;
-                                        Gynecology</option>
-                                    <option ng-value="15" value="number:15" aria-checked="true">Oncology</option>
-                                    <option ng-value="36" value="number:36" aria-checked="true">Orthopedics, Arthoscopy
-                                        &amp; Joint Replacement</option>
-                                    <option ng-value="17" value="number:17" aria-checked="true">Pediatric &amp;
-                                        Neonatology</option>
-                                    <option ng-value="70" value="number:70" aria-checked="true">Pediatric Surgery
-                                    </option>
-                                    <option ng-value="13" value="number:13" aria-checked="true">Plastic &amp; Aesthetic
-                                        Surgery</option>
-                                    <option ng-value="46" value="number:46" aria-checked="true">Psychiatry</option>
-                                    <option ng-value="42" value="number:42" aria-checked="true">Radiology &amp; Imaging
-                                    </option>
-                                    <option ng-value="39" value="number:39" aria-checked="true">Respiratory Medicine
-                                    </option>
-                                    <option ng-value="82" value="number:82" aria-checked="true">Rheumatology</option>
-                                    <option ng-value="85" value="number:85" aria-checked="true">Surgical Oncology
-                                    </option>
-                                    <option ng-value="37" value="number:37" aria-checked="true">Thoracic Surgery
-                                    </option>
-                                    <option ng-value="16" value="number:16" aria-checked="true">Urology</option>
-                                    <option ng-value="56" value="number:56" aria-checked="true">Vaccination Center
-                                    </option>
-                                    <option ng-value="35" value="number:35" aria-checked="true">Vascular Surgery
-                                    </option>
-                                </select>
-                            </div>
+                            <form name="appointmentForm" ng-hide="appointmentConfirmation"
+                            class="ng-pristine ng-invalid ng-invalid-required" aria-hidden="false">
+                            <div class="row">
 
-                            <button ng-click="searchDoctor(bv.departmentSearch,bv.nameSearch)"
-                                class="btn btn-theme col-md-2 col-xs-12 margin-bottom-20">Search</button>
+                                <label class="col-md-6 col-xs-12 margin-bottom-20">
+                                    <span class="fa fa-medkit"></span>
+                                    <select id="dipartment_select"
+                                    onchange="dipartmentChange()"  
+                                        class="form-control ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
+                                        ng-model="bv.department" ng-change="getDoctorsByDepartment(bv.department)"
+                                        required="" aria-invalid="true">
+                                    </select>
+                                </label>
+
+                                <label class="col-md-6 col-xs-12 margin-bottom-20">
+                                    <span class="fa fa-user-md"></span>
+                                    <select id="doctor_select"
+                                        class="form-control ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched"
+                                        ng-model="bv.department" ng-change="getDoctorsByDepartment(bv.department)"
+                                        required="" aria-invalid="true">
+                                    </select>
+                                </label>
+                               
+
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -894,99 +769,7 @@
     <!-- all plugins and JavaScript -->
     <script type="text/javascript" src="./UI/FrontEnd/js/css3-animate-it.js"></script>
     <script type="text/javascript" src="./UI/FrontEnd/js/bootstrap-dropdownhover.min.js"></script>
-
-
-
-    <script>
-        data = [
-            {
-                dipartment_name: "Cardiology",
-                doctors: [' Dr. Anis', 'Dr. Arafat', 'Dr. Arman', 'Dr. Tofial Ahmed', 'Dr. Alaol', 'Dr. Rafiq Azad']
-            },
-            {
-                dipartment_name: "Plastic & Aesthetic Surgery",
-                doctors: ['Dr. Nasima Akhter', 'Dr. Maqsudul Alam', 'Dr. Anit Chakma', 'Dr. Abed Chaudhury', 'Dr. Abul Hossion', 'Dr. Haji Shariatullah']
-            },
-            {
-                dipartment_name: "Oncology",
-                doctors: ['Dr. Maqsudul Alam', 'Dr. Lutful Aziz', 'Dr. Chanchal Kumar Devnath', 'Dr. Hasina Akhter', 'Dr. Anit Chakma', 'Dr. Abed Chaudhury']
-            },
-            {
-                dipartment_name: "Urology",
-                doctors: ['Dr. SM Fauque', 'Dr. Fafiqul Islam', 'Dr. Hiralal Sen', 'Dr. Ahmed Sofa', 'Dr. Zaunul Abedin', 'Dr. Jamulur Reza Choudhury']
-            },
-            {
-                dipartment_name: "Gastroenterology",
-                doctors: ['Dr. Hiralal Sen', 'Dr. Ahmed Sofa', 'Dr. Zaunul Abedin', 'Prof. Dr. M.A. Muqueet', 'Prof. Dr. Shamima Jahan', 'Dr. Tahmina Afrin Daisy']
-            },
-            {
-                dipartment_name: "Nephrology",
-                doctors: ['De. Tajkia Haque', 'Dr. Md. Obaidul Islam Sobuj', 'Dr. A.M. Ziaul Haque Masum', 'Dr. Tofial Ahmed', 'Dr. Alaol', 'Dr. Rafiq Azad']
-            },
-            {
-                dipartment_name: "Gynecology",
-                doctors: ['Dr. Md. Sahbub Alam', 'Dr. Maqsudul Alam', 'Dr. Anit Chakma', 'Dr. Abed Chaudhury', 'Dr. Hppy Haque', 'Dr. Lubna Khondker']
-            },
-            {
-                dipartment_name: "MRD SERVICES",
-                doctors: ['Prof. Dr. M.A. Muqueet', 'Prof. Dr. Shamima Jahan', 'Dr. Tahmina Afrin Daisy', 'Dr. Nasima Akhter', 'Dr. Maqsudul Alam', 'Dr. Anit Chakma']
-            },
-            {
-                dipartment_name: "Dermatology",
-                doctors: ['De. Tajkia Haque', 'Dr. Md. Obaidul Islam Sobuj', 'Dr. SM Fauque', 'Dr. Fafiqul Islam', 'Dr. Hiralal Sen', 'Dr. A.M. Ziaul Haque Masum']
-            },
-            {
-                dipartment_name: "Diabetes",
-                doctors: ['Dr. Md. Kamruzzaman', 'Prof. Dr. Jonaid Shafiq', 'Prof. Dr. Moinul Hossain', 'Dr. SM Fauque', 'Dr. Fafiqul Islam', 'Dr. Hiralal Sen']
-            },
-            {
-                dipartment_name: "Cardiac surgery",
-                doctors: ['Dr. Lutful Aziz', 'Dr. Chanchal Kumar Devnath', 'Dr. Hasina Akhter', 'Dr. Hiralal Sen', 'Dr. Ahmed Sofa', 'Dr. Zaunul Abedin', 'Dr. Jamulur Reza Choudhury']
-            },
-        ]
-
-        other_doctor_select = document.querySelector('#other_doctor_select')
-        another_doctor_select = document.querySelector('#another_doctor_select')
-        renderDipartment = () => {
-            other_doctor_select.innerHTML = ''
-
-            data.forEach(item => {
-                console.log(item.dipartment_name);
-                let new_el = document.createElement('option')
-                new_el.value = item.dipartment_name
-                new_el.innerHTML = `${item.dipartment_name}`
-                other_doctor_select.appendChild(new_el)
-                // <option ng-value="10" value="number:10" aria-checked="true">General &amp;Laparoscopic Surgery</option>
-            });
-        }
-
-        dipartmentChange = () => {
-            // <option ng-value="10" value="number:10" aria-checked="true">General &amp;Laparoscopic Surgery</option>
-            console.log(other_doctor_select.value);
-
-            doctors = null
-            data.forEach(item => {
-                if (item.dipartment_name === other_doctor_select.value) {
-                    doctors = item.doctors
-                }
-            });
-            if (doctors) {
-                another_doctor_select.innerHTML = ''
-
-                doctors.forEach(item => {
-                    console.log(item);
-                    let new_el = document.createElement('option')
-                    new_el.value = item
-                    new_el.innerHTML = `${item}`
-                    another_doctor_select.appendChild(new_el)
-                    // <option ng-value="10" value="number:10" aria-checked="true">General &amp;Laparoscopic Surgery</option>
-                });
-            }
-        }
-
-        renderDipartment()
-        dipartmentChange()
-    </script>
+    <script src="./UI/FrontEnd/js/form.js"></script>
 
 </body>
 
